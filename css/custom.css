@@ -1,0 +1,355 @@
+/* Text */
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 11px;
+	color:#969196;
+	/* Fade In */
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 1s;
+}
+
+@keyframes fadeInOpacity { 0% {
+	opacity: 0; } 100% {
+	opacity: 1;
+	}
+}
+
+/* Links */
+a:link {color:#969196;}
+a:visited {color:#969196;}
+a:hover {color:#000000;}
+a:active {color:#000000;}
+
+/* Logo */
+.logo {
+	padding-top: 0px;
+	padding-bottom: 50px;
+	position: fixed;
+	z-index: 1;
+}
+
+/* Nav */
+.nav-link {
+	text-transform: uppercase; 
+	letter-spacing: 1px;
+	padding-bottom: 40px;
+}
+.nav-link:hover {
+  font-weight: 700;
+}
+
+/*Scroll back to top button*/
+#button {
+  display: none;
+  position: fixed;
+  bottom: 40px;
+  right: 0px;
+  z-index: 99;
+  font-size: 10px;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  padding: 12px;
+  border-radius: 0px;
+}
+
+/* Contact */
+.contact {
+	font-size: 15px;
+	text-align: center;
+	/* letter-spacing: 10px; */
+	padding-top: 10px;
+	padding-bottom: 40px;
+}
+.contact a:link {color:#000000;}
+
+/* Title */
+.title {
+	text-align: center;
+	font-family: 'Montserrat';
+	font-weight: 200;
+	font-size: 30px;
+	color: #000000;
+	letter-spacing: -1px;
+	padding-bottom: 10px;
+}
+
+/* Title Box*/
+.title-box {
+	text-align: center;
+	font-family: 'Montserrat';
+	font-weight: 200;
+	font-size: 30px;
+	color: #FFFFFF;
+	letter-spacing: -1px;
+	line-height: 1;
+	background-color: #c8c0c8;
+  	padding: 35px;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+/* Description */
+.description {
+	max-width: 90%;
+	text-align: center;
+	font-family: 'Montserrat';
+	line-height: 2;
+	font-weight: 300;
+	font-size: 13px;
+	letter-spacing: -0.05px;
+	padding-bottom: 40px;
+}
+.description a:hover {
+	text-decoration: none;
+}
+.description img {
+	max-width: 100%;
+  -webkit-filter: grayscale(100%);
+  -webkit-transition: .5s ease-in-out;
+  -moz-filter: grayscale(100%); 
+  -moz-transition: .5s ease-in-out;
+  -o-filter: grayscale(100%); 
+  -o-transition: .5s ease-in-out;
+
+	opacity: 0.5;
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+}
+.description img:hover {
+  -webkit-filter: grayscale(0%);
+  -webkit-transition: .2s ease-in-out;
+  -moz-filter: grayscale(0%);
+  -moz-transition: .2s ease-in-out;
+  -o-filter: grayscale(0%);
+  -o-transition: .2s ease-in-out;
+	
+	opacity: 1;
+}
+.arrow {
+	font-size: 14px;
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+
+.video-container {
+position: relative;
+padding-bottom: 56.25%;
+padding-top: 0px; height: 0; overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
+/* Copyright */
+p {
+	font-size: 8px;
+}
+
+/* Gallery */
+.gallery {
+	padding-bottom: 40px;
+}
+/* Greyscale Hover */
+.box {
+	display:inline-block;
+	max-width: 100%;
+	background:#aca2ac;
+}
+.box img {
+	/*Greyscale Hover*/
+  -webkit-filter: grayscale(100%);
+  -webkit-transition: .5s ease-in-out;
+  -moz-filter: grayscale(100%); 
+  -moz-transition: .5s ease-in-out;
+  -o-filter: grayscale(100%); 
+  -o-transition: .5s ease-in-out;
+  
+  	/*Opacity Hover*/
+	opacity: 0.5;
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+}
+.box:hover img { 
+	/*Greyscale Hover*/
+  -webkit-filter: grayscale(0%);
+  -webkit-transition: .2s ease-in-out;
+  -moz-filter: grayscale(0%);
+  -moz-transition: .2s ease-in-out;
+  -o-filter: grayscale(0%);
+  -o-transition: .2s ease-in-out;
+  
+  /*Opacity Hover*/
+  opacity: 1;
+}
+@media only screen and (max-width: 575px) {
+.box img {
+  -webkit-filter: grayscale(0%);
+  -webkit-transition: .2s ease-in-out;
+  -moz-filter: grayscale(0%);
+  -moz-transition: .2s ease-in-out;
+  -o-filter: grayscale(0%);
+  -o-transition: .2s ease-in-out;
+	
+		opacity: 1;
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+}
+.box .caption {
+	display: none;
+}
+.box:hover .caption {
+    display: none;
+}
+}
+.box .caption {
+    opacity: 0;
+    position: absolute;
+	text-align: center;
+	bottom: 10%;
+    left: 0px;
+    right: 0px;
+	color: #ffffff;
+	font-size: 75%;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+	-webkit-user-select: none; /* Unselectable text */        
+	-moz-user-select: none;
+	-ms-user-select: none;
+    -webkit-transition: opacity 0.2s;
+    -moz-transition: opacity 0.2s;
+    -o-transition: opacity 0.2s;
+    transition: opacity 0.2s;
+}
+
+.printbox {
+  position: relative;
+  width: 100%;
+}
+
+/* The overlay effect (full height and width) - lays on top of the container and over the image */
+.overlay {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  height: 29px;
+  width: 29px;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: black;
+}
+
+/* When you mouse over the container, fade in the overlay icon*/
+.printbox:hover .overlay {
+  opacity: 1;
+}
+
+/* The icon inside the overlay*/
+.buyicon {
+  color: white !important;
+  text-decoration: none;
+  font-size: 13px;
+  margin-top: 15px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.return {
+  position: absolute;
+  top: 16px;
+  right: 13px;
+  height: 29px;
+  width: 29px;
+  opacity: 1;
+  font-size: 16px;
+}
+.plus {
+  position: absolute;
+  top: 13px;
+  right: 13px;
+  opacity: 0;
+  font-size: 12px;
+  transition: .3s ease;
+}
+.box:hover .plus {
+  opacity: 1;
+}
+.fa {
+    color: white;
+}
+
+/* Individual Projects Toggle*/
+#GalleryPage {
+		/* Fade In */
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 0.5s;
+}
+#TravelBrands {
+		/* Fade In */
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 0.5s;
+}
+#RedTag {
+		/* Fade In */
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 0.5s;
+}
+#itravel2000 {
+		/* Fade In */
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 0.5s;
+}
+#FreshPrint {
+		/* Fade In */
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 0.5s;
+}
+#FreshBurger {
+		/* Fade In */
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 0.5s;
+}
+#Typography {
+		/* Fade In */
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 0.5s;
+}
